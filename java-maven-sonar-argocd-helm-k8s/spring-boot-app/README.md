@@ -63,9 +63,12 @@ adduser sonarqube
 sudo su sonarqube
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.4.1.88267.zip
 unzip *
-chown -R sonarqube:sonarqube /opt/sonarqube
-chmod -R 775 /opt/sonarqube
-cd /opt/sonarqube/bin/linux-x86-64
+ls
+pwd    ====> then you will be in [ /home/sonarqube ]
+chown -R sonarqube:sonarqube /home/sonarqube
+chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-10.4.1.88267
+ls     ====> you will see    [sonarqube-10.4.1.88267  sonarqube-10.4.1.88267.zip]
+cd /sonarqube/bin/linux-x86-64
 ./sonar.sh start
 ```
 
