@@ -69,6 +69,7 @@ chown -R sonarqube:sonarqube /home/sonarqube
 chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-10.4.1.88267
 ls     ====> you will see    [sonarqube-10.4.1.88267  sonarqube-10.4.1.88267.zip]
 cd /sonarqube/bin/linux-x86-64
+ls     ====>  you will see [.sonar.sh]
 ./sonar.sh start
 ```
 
