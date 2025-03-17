@@ -73,7 +73,10 @@ pwd    ====> then you will be in [ /home/sonarqube ]
 chown -R sonarqube:sonarqube /home/sonarqube
 chown -R sonarqube:sonarqube /home/sonarqube/sonarqube-10.4.1.88267
 ls     ====> you will see    [sonarqube-10.4.1.88267  sonarqube-10.4.1.88267.zip]
-cd /sonarqube/bin/linux-x86-64
+cd /sonarqube/bin/
+ls     ====> you will see [ elasticsearch  linux-x86-64  macosx-universal-64  windows-x86-64  winsw-license ]
+### since you are in linux go to linux-x86-64
+cd linux-x86-64
 ls     ====>  you will see [.sonar.sh]
 ./sonar.sh start
 ```
