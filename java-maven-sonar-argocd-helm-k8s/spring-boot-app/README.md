@@ -63,8 +63,10 @@ sudo su sonarqube
 wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-10.4.1.88267.zip
 unzip *
 ###again go to the root user since i had to install unzip
-sudo apt update && sudo apt install unzip -y
 sudo su -
+sudo apt update && sudo apt install unzip -y
+### go back to sonarqube user
+sudo su - sonarqube
 unzip *
 ls
 pwd    ====> then you will be in [ /home/sonarqube ]
