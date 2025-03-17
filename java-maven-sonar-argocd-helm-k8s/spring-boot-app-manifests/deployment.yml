@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: suryasjv/java-maven-argocd:10
+        image: suryasjv/java-maven-argocd:12
         ports:
         - containerPort: 8080
